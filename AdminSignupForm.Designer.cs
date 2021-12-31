@@ -43,7 +43,7 @@ namespace A2ZRecreation
             // 
             this.adminTextDisplay.AutoSize = true;
             this.adminTextDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(243)))), ((int)(((byte)(231)))));
-            this.adminTextDisplay.Location = new System.Drawing.Point(324, 84);
+            this.adminTextDisplay.Location = new System.Drawing.Point(323, 78);
             this.adminTextDisplay.Name = "adminTextDisplay";
             this.adminTextDisplay.Size = new System.Drawing.Size(150, 13);
             this.adminTextDisplay.TabIndex = 0;
@@ -51,14 +51,14 @@ namespace A2ZRecreation
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(341, 174);
+            this.usernameTextBox.Location = new System.Drawing.Point(340, 168);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(122, 20);
             this.usernameTextBox.TabIndex = 1;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(341, 223);
+            this.passwordTextBox.Location = new System.Drawing.Point(340, 217);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(122, 20);
@@ -67,7 +67,7 @@ namespace A2ZRecreation
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(338, 158);
+            this.usernameLabel.Location = new System.Drawing.Point(337, 152);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(55, 13);
             this.usernameLabel.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace A2ZRecreation
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(338, 207);
+            this.label1.Location = new System.Drawing.Point(337, 201);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace A2ZRecreation
             // 
             // confirmPasswordTextBox
             // 
-            this.confirmPasswordTextBox.Location = new System.Drawing.Point(341, 269);
+            this.confirmPasswordTextBox.Location = new System.Drawing.Point(340, 263);
             this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
             this.confirmPasswordTextBox.PasswordChar = '*';
             this.confirmPasswordTextBox.Size = new System.Drawing.Size(122, 20);
@@ -93,7 +93,7 @@ namespace A2ZRecreation
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(338, 253);
+            this.label2.Location = new System.Drawing.Point(337, 247);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 6;
@@ -101,7 +101,7 @@ namespace A2ZRecreation
             // 
             // continueAsAdminButton
             // 
-            this.continueAsAdminButton.Location = new System.Drawing.Point(349, 348);
+            this.continueAsAdminButton.Location = new System.Drawing.Point(348, 342);
             this.continueAsAdminButton.Name = "continueAsAdminButton";
             this.continueAsAdminButton.Size = new System.Drawing.Size(110, 23);
             this.continueAsAdminButton.TabIndex = 7;
@@ -124,6 +124,7 @@ namespace A2ZRecreation
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.adminTextDisplay);
             this.Name = "AdminSignupForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminSignupFrom";
             this.ResumeLayout(false);
             this.PerformLayout();
