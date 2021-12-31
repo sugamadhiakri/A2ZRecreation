@@ -53,6 +53,12 @@ namespace A2ZRecreation
             users.Add(admin);
             serializer.Serialize(usersFile, users);
             usersFile.Close();
+
+            // open login form
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.ShowDialog();
+            this.Close();
         }
     }
 }
