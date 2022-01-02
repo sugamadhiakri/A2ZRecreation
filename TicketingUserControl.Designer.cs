@@ -30,15 +30,15 @@ namespace A2ZRecreation
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.NoOfPeopleNumeric = new System.Windows.Forms.NumericUpDown();
-            this.TicketType = new System.Windows.Forms.ComboBox();
-            this.Duration = new System.Windows.Forms.ComboBox();
+            this.NoOfPeople = new System.Windows.Forms.NumericUpDown();
+            this.TicketTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.DurationComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.GenerateTicketButton = new System.Windows.Forms.Button();
             this.DayLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.NoOfPeopleNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NoOfPeople)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -50,28 +50,38 @@ namespace A2ZRecreation
             this.label1.TabIndex = 0;
             this.label1.Text = "Ticketing";
             // 
-            // NoOfPeopleNumeric
+            // NoOfPeople
             // 
-            this.NoOfPeopleNumeric.Location = new System.Drawing.Point(90, 214);
-            this.NoOfPeopleNumeric.Name = "NoOfPeopleNumeric";
-            this.NoOfPeopleNumeric.Size = new System.Drawing.Size(120, 20);
-            this.NoOfPeopleNumeric.TabIndex = 1;
+            this.NoOfPeople.Location = new System.Drawing.Point(90, 214);
+            this.NoOfPeople.Name = "NoOfPeople";
+            this.NoOfPeople.Size = new System.Drawing.Size(120, 20);
+            this.NoOfPeople.TabIndex = 1;
             // 
-            // TicketType
+            // TicketTypeComboBox
             // 
-            this.TicketType.FormattingEnabled = true;
-            this.TicketType.Location = new System.Drawing.Point(243, 214);
-            this.TicketType.Name = "TicketType";
-            this.TicketType.Size = new System.Drawing.Size(121, 21);
-            this.TicketType.TabIndex = 2;
+            this.TicketTypeComboBox.FormattingEnabled = true;
+            this.TicketTypeComboBox.Items.AddRange(new object[] {
+            "Adult",
+            "Child"});
+            this.TicketTypeComboBox.Location = new System.Drawing.Point(243, 214);
+            this.TicketTypeComboBox.Name = "TicketTypeComboBox";
+            this.TicketTypeComboBox.Size = new System.Drawing.Size(121, 21);
+            this.TicketTypeComboBox.TabIndex = 2;
+            this.TicketTypeComboBox.Text = "Select One";
             // 
-            // Duration
+            // DurationComboBox
             // 
-            this.Duration.FormattingEnabled = true;
-            this.Duration.Location = new System.Drawing.Point(400, 213);
-            this.Duration.Name = "Duration";
-            this.Duration.Size = new System.Drawing.Size(121, 21);
-            this.Duration.TabIndex = 3;
+            this.DurationComboBox.FormattingEnabled = true;
+            this.DurationComboBox.Items.AddRange(new object[] {
+            "1Hr",
+            "2Hr",
+            "5Hr",
+            "1D"});
+            this.DurationComboBox.Location = new System.Drawing.Point(400, 213);
+            this.DurationComboBox.Name = "DurationComboBox";
+            this.DurationComboBox.Size = new System.Drawing.Size(121, 21);
+            this.DurationComboBox.TabIndex = 3;
+            this.DurationComboBox.Text = "Select One";
             // 
             // label2
             // 
@@ -108,6 +118,7 @@ namespace A2ZRecreation
             this.GenerateTicketButton.TabIndex = 7;
             this.GenerateTicketButton.Text = "Generate Ticket";
             this.GenerateTicketButton.UseVisualStyleBackColor = true;
+            this.GenerateTicketButton.Click += new System.EventHandler(this.GenerateTicketButton_Click);
             // 
             // DayLabel
             // 
@@ -127,13 +138,14 @@ namespace A2ZRecreation
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Duration);
-            this.Controls.Add(this.TicketType);
-            this.Controls.Add(this.NoOfPeopleNumeric);
+            this.Controls.Add(this.DurationComboBox);
+            this.Controls.Add(this.TicketTypeComboBox);
+            this.Controls.Add(this.NoOfPeople);
             this.Controls.Add(this.label1);
             this.Name = "TicketingUserControl";
             this.Size = new System.Drawing.Size(595, 450);
-            ((System.ComponentModel.ISupportInitialize)(this.NoOfPeopleNumeric)).EndInit();
+            this.Load += new System.EventHandler(this.TicketingUserControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.NoOfPeople)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,9 +154,9 @@ namespace A2ZRecreation
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown NoOfPeopleNumeric;
-        private System.Windows.Forms.ComboBox TicketType;
-        private System.Windows.Forms.ComboBox Duration;
+        private System.Windows.Forms.NumericUpDown NoOfPeople;
+        private System.Windows.Forms.ComboBox TicketTypeComboBox;
+        private System.Windows.Forms.ComboBox DurationComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

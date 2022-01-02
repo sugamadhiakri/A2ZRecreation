@@ -29,5 +29,15 @@ namespace A2ZRecreation
         public double Price { get; set; }
         public DateTime Date { get; set; }
 
+        public static List<Ticket> GetAvailableTickets ()
+        {
+            return new List<Ticket>();
+        }
+
+        public static void SaveTicket(Ticket ticket)
+        {
+
+        }
+
     }
 }
