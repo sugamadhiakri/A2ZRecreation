@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace A2ZRecreation
 {
@@ -31,6 +33,17 @@ namespace A2ZRecreation
             defaultRate.WeekendCharge = 20;
 
             return defaultRate;
+        }
+
+        public static Rate GetCurrentRates()
+        {
+            Rate currentRate = new Rate();
+            FileStream ratesFile = new FileStream(System.IO.Directory.GetCurrentDirectory() + "\\Rates.xml", FileMode.Open, FileAccess.Read);
+            XmlSerializer serializer = new XmlSerializer(typeof(Rate));
+            currentRate = (Rate)serializer.Deserialize(ratesFile);
+            ratesFile.Close();
+
+            return currentRate;
         }
     }
 

@@ -38,9 +38,7 @@ namespace A2ZRecreation
             // Using the Try/Catch as conditional statement. 
             try
             { // If the rates file exists
-                ratesFile = new FileStream(System.IO.Directory.GetCurrentDirectory() + "\\Rates.xml", FileMode.Open, FileAccess.Read);
-                currentRate = (Rate)serializer.Deserialize(ratesFile);
-                ratesFile.Close();
+                currentRate = Rate.GetCurrentRates();
             }
             catch (Exception err)
             { // if the rates file doesn't exist
