@@ -49,6 +49,8 @@ namespace A2ZRecreation
             this.weekendCharge = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.RatesSaveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.oneHrRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.twoHrRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fiveHrRate)).BeginInit();
@@ -223,10 +225,31 @@ namespace A2ZRecreation
             this.label12.TabIndex = 24;
             this.label12.Text = "Weekend Charge:";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(230, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(91, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "All the price rates.";
+            // 
+            // RatesSaveButton
+            // 
+            this.RatesSaveButton.Location = new System.Drawing.Point(94, 378);
+            this.RatesSaveButton.Name = "RatesSaveButton";
+            this.RatesSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.RatesSaveButton.TabIndex = 28;
+            this.RatesSaveButton.Text = "Save";
+            this.RatesSaveButton.UseVisualStyleBackColor = true;
+            this.RatesSaveButton.Click += new System.EventHandler(this.RatesSaveButton_Click);
+            // 
             // RatesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RatesSaveButton);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.weekendCharge);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -284,5 +307,7 @@ namespace A2ZRecreation
         private System.Windows.Forms.NumericUpDown weekendCharge;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button RatesSaveButton;
     }
 }

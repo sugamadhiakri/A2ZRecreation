@@ -20,9 +20,41 @@ namespace A2ZRecreation
             loggedInUsername.Text = loggedInUser.Username;
         }
 
-        private void employeeUserControl1_Load(object sender, EventArgs e)
+        private void AdminForm_Load(object sender, EventArgs e)
         {
+            ratesUserControl1.Hide();
+            reportUserControl1.Hide();
+            
+            employeeUserControl1.Show();
+            employeeUserControl1.BringToFront();
 
+        }
+
+        private void employeeButton_Click(object sender, EventArgs e)
+        {
+            ratesUserControl1.Hide();
+            reportUserControl1.Hide();
+
+            employeeUserControl1.Show();
+            employeeUserControl1.BringToFront();
+        }
+
+        private void reportButton_Click(object sender, EventArgs e)
+        {
+            ratesUserControl1.Hide();
+            employeeUserControl1.Hide();
+
+            reportUserControl1.Show();
+            reportUserControl1.BringToFront();
+        }
+
+        private void ratesButton_Click(object sender, EventArgs e)
+        {
+            employeeUserControl1.Hide();
+            reportUserControl1.Hide();
+
+            ratesUserControl1.Show();
+            ratesUserControl1.BringToFront();
         }
     }
 }

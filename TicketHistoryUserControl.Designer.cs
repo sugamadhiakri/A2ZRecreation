@@ -1,7 +1,7 @@
 ﻿
 namespace A2ZRecreation
 {
-    partial class ReportUserControl
+    partial class TicketHistoryUserControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,18 +35,18 @@ namespace A2ZRecreation
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(220, 107);
+            this.label1.Location = new System.Drawing.Point(245, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Report User Control";
+            this.label1.Text = "Ticket History";
             // 
-            // ReportUserControl
+            // TicketHistoryUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "ReportUserControl";
+            this.Name = "TicketHistoryUserControl";
             this.Size = new System.Drawing.Size(595, 450);
             this.ResumeLayout(false);
             this.PerformLayout();

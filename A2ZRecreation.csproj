@@ -97,6 +97,19 @@
     <Compile Include="StaffForm.Designer.cs">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ticket.cs" />
+    <Compile Include="TicketHistoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketHistoryUserControl.Designer.cs">
+      <DependentUpon>TicketHistoryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TicketingUserControl.Designer.cs">
+      <DependentUpon>TicketingUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AddEmployeeForm.resx">
       <DependentUpon>AddEmployeeForm.cs</DependentUpon>
@@ -130,6 +143,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffForm.resx">
       <DependentUpon>StaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketHistoryUserControl.resx">
+      <DependentUpon>TicketHistoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketingUserControl.resx">
+      <DependentUpon>TicketingUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

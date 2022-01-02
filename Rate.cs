@@ -8,14 +8,14 @@ namespace A2ZRecreation
 {
     public class Rate
     {
-        public double OneHr { get; set; }
-        public double TwoHr { get; set; }
-        public double FiveHr { get; set; }
-        public double OneDay { get; set; }
-        public double ChildDiscount { get; set; }
-        public double FiveDiscount { get; set; }
-        public double TenDiscount { get; set; }
-        public double WeekendCharge { get; set; }
+        public int OneHr { get; set; }
+        public int TwoHr { get; set; }
+        public int FiveHr { get; set; }
+        public int OneDay { get; set; }
+        public int ChildDiscount { get; set; }
+        public int FiveDiscount { get; set; }
+        public int TenDiscount { get; set; }
+        public int WeekendCharge { get; set; }
 
         public static Rate GetDefaultRates()
         {
