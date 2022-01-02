@@ -23,6 +23,7 @@ namespace A2ZRecreation
 
         private void GenerateTicketButton_Click(object sender, EventArgs e)
         {
+            
             // Get all available Tickets
             List<Ticket> tickets = Ticket.GetAvailableTickets();
             
@@ -47,7 +48,7 @@ namespace A2ZRecreation
                 MessageBoxIcon.Information);
 
             // Add the ticket to the file
-            SaveTicket(ticket);
+            Ticket.SaveTicket(ticket);
         }
 
         private void TicketingUserControl_Load(object sender, EventArgs e)
@@ -93,9 +94,5 @@ namespace A2ZRecreation
             return price;
         }
 
-        private static void SaveTicket(Ticket ticket)
-        {
-             
-        }
     }
 }

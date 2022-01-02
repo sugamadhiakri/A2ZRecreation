@@ -53,9 +53,19 @@ namespace A2ZRecreation
             // NoOfPeople
             // 
             this.NoOfPeople.Location = new System.Drawing.Point(90, 214);
+            this.NoOfPeople.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NoOfPeople.Name = "NoOfPeople";
             this.NoOfPeople.Size = new System.Drawing.Size(120, 20);
             this.NoOfPeople.TabIndex = 1;
+            this.NoOfPeople.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // TicketTypeComboBox
             // 
@@ -67,7 +77,7 @@ namespace A2ZRecreation
             this.TicketTypeComboBox.Name = "TicketTypeComboBox";
             this.TicketTypeComboBox.Size = new System.Drawing.Size(121, 21);
             this.TicketTypeComboBox.TabIndex = 2;
-            this.TicketTypeComboBox.Text = "Select One";
+            this.TicketTypeComboBox.Text = "Adult";
             // 
             // DurationComboBox
             // 
@@ -81,7 +91,7 @@ namespace A2ZRecreation
             this.DurationComboBox.Name = "DurationComboBox";
             this.DurationComboBox.Size = new System.Drawing.Size(121, 21);
             this.DurationComboBox.TabIndex = 3;
-            this.DurationComboBox.Text = "Select One";
+            this.DurationComboBox.Text = "1Hr";
             // 
             // label2
             // 
