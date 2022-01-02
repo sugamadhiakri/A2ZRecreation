@@ -15,6 +15,12 @@ namespace A2ZRecreation
         public TicketHistoryUserControl()
         {
             InitializeComponent();
+            TicketHistoryTable.DataSource = Ticket.GetAvailableTickets();
+        }
+
+        private void TicketHistoryUserControl_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
