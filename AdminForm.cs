@@ -10,13 +10,19 @@ using System.Windows.Forms;
 
 namespace A2ZRecreation
 {
-    public partial class MainForm : Form
+    public partial class AdminForm : Form
     {
         User loggedInUser;
-        public MainForm(User user)
+        public AdminForm(User user)
         {
             this.loggedInUser = user;
             InitializeComponent();
+            loggedInUsername.Text = loggedInUser.Username;
+        }
+
+        private void employeeUserControl1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

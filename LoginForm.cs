@@ -39,14 +39,23 @@ namespace A2ZRecreation
             // check if the username exists
             FileStream usersFile = new FileStream(System.IO.Directory.GetCurrentDirectory() + "\\Users.xml", FileMode.Open, FileAccess.Read);
             users = (List<User>)serializer.Deserialize(usersFile);
+            usersFile.Close();
 
             foreach(User user in users)
             {
                 if(user.Username == username && user.Password == password)
                 {
-                    MainForm mainForm = new MainForm(user);
+                    Form mainform;
+                    if (user.Type == UserType.ADMIN)
+                    {
+                        mainform = new AdminForm(user);
+                    } else
+                    {
+                        mainform = new StaffForm(user);
+                    }
+
                     this.Hide();
-                    mainForm.ShowDialog();
+                    mainform.ShowDialog();
                     this.Close();
                     return;
                 }
