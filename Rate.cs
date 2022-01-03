@@ -37,7 +37,7 @@ namespace A2ZRecreation
 
         public static Rate GetCurrentRates()
         {
-            Rate currentRate = new Rate();
+            Rate currentRate;
             FileStream ratesFile = new FileStream(System.IO.Directory.GetCurrentDirectory() + "\\Rates.xml", FileMode.Open, FileAccess.Read);
             XmlSerializer serializer = new XmlSerializer(typeof(Rate));
             currentRate = (Rate)serializer.Deserialize(ratesFile);

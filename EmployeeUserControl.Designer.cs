@@ -31,7 +31,6 @@ namespace A2ZRecreation
         {
             this.AddEmployeeButton = new System.Windows.Forms.Button();
             this.employeeDataGridView = new System.Windows.Forms.DataGridView();
-            this.deleteSelectedEmployeeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,21 +53,10 @@ namespace A2ZRecreation
             this.employeeDataGridView.Size = new System.Drawing.Size(515, 317);
             this.employeeDataGridView.TabIndex = 1;
             // 
-            // deleteSelectedEmployeeButton
-            // 
-            this.deleteSelectedEmployeeButton.Location = new System.Drawing.Point(422, 391);
-            this.deleteSelectedEmployeeButton.Name = "deleteSelectedEmployeeButton";
-            this.deleteSelectedEmployeeButton.Size = new System.Drawing.Size(135, 23);
-            this.deleteSelectedEmployeeButton.TabIndex = 2;
-            this.deleteSelectedEmployeeButton.Text = "Delete Selected Staff";
-            this.deleteSelectedEmployeeButton.UseVisualStyleBackColor = true;
-            this.deleteSelectedEmployeeButton.Click += new System.EventHandler(this.deleteSelectedEmployeeButton_Click);
-            // 
             // EmployeeUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.deleteSelectedEmployeeButton);
             this.Controls.Add(this.employeeDataGridView);
             this.Controls.Add(this.AddEmployeeButton);
             this.Name = "EmployeeUserControl";
@@ -83,6 +71,5 @@ namespace A2ZRecreation
 
         private System.Windows.Forms.Button AddEmployeeButton;
         private System.Windows.Forms.DataGridView employeeDataGridView;
-        private System.Windows.Forms.Button deleteSelectedEmployeeButton;
     }
 }

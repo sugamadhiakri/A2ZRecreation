@@ -19,7 +19,7 @@ namespace A2ZRecreation
             InitializeComponent();
         }
 
-        private void addEmployeeButton_Click(object sender, EventArgs e)
+        private void AddEmployeeButton_Click(object sender, EventArgs e)
         {
             // get data from textbox
             string username = usernameTextBox.Text.Trim();

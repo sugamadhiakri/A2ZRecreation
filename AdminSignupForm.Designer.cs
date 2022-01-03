@@ -107,7 +107,7 @@ namespace A2ZRecreation
             this.continueAsAdminButton.TabIndex = 7;
             this.continueAsAdminButton.Text = "Continue As Admin";
             this.continueAsAdminButton.UseVisualStyleBackColor = true;
-            this.continueAsAdminButton.Click += new System.EventHandler(this.continueAsAdminButton_Click);
+            this.continueAsAdminButton.Click += new System.EventHandler(this.ContinueAsAdminButton_Click);
             // 
             // AdminSignupForm
             // 

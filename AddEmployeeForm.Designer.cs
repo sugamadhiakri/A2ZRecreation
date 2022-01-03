@@ -60,7 +60,7 @@ namespace A2ZRecreation
             this.addEmployeeButton.TabIndex = 2;
             this.addEmployeeButton.Text = "Add";
             this.addEmployeeButton.UseVisualStyleBackColor = true;
-            this.addEmployeeButton.Click += new System.EventHandler(this.addEmployeeButton_Click);
+            this.addEmployeeButton.Click += new System.EventHandler(this.AddEmployeeButton_Click);
             // 
             // passwordTextBox
             // 

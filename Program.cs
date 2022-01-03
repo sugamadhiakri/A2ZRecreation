@@ -20,7 +20,7 @@ namespace A2ZRecreation
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            if(checkAdminAlreadyExists())
+            if(CheckAdminAlreadyExists())
             {
                 Application.Run(new LoginForm());
             } else
@@ -29,7 +29,7 @@ namespace A2ZRecreation
             }
         }
 
-        static bool checkAdminAlreadyExists()
+        static bool CheckAdminAlreadyExists()
         {
             try
             {

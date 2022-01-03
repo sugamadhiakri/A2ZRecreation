@@ -65,7 +65,7 @@ namespace A2ZRecreation
             this.ratesButton.TabIndex = 4;
             this.ratesButton.Text = "Rates";
             this.ratesButton.UseVisualStyleBackColor = true;
-            this.ratesButton.Click += new System.EventHandler(this.ratesButton_Click);
+            this.ratesButton.Click += new System.EventHandler(this.RatesButton_Click);
             // 
             // reportButton
             // 
@@ -75,7 +75,7 @@ namespace A2ZRecreation
             this.reportButton.TabIndex = 3;
             this.reportButton.Text = "Report";
             this.reportButton.UseVisualStyleBackColor = true;
-            this.reportButton.Click += new System.EventHandler(this.reportButton_Click);
+            this.reportButton.Click += new System.EventHandler(this.ReportButton_Click);
             // 
             // employeeButton
             // 
@@ -85,7 +85,7 @@ namespace A2ZRecreation
             this.employeeButton.TabIndex = 2;
             this.employeeButton.Text = "Employee";
             this.employeeButton.UseVisualStyleBackColor = true;
-            this.employeeButton.Click += new System.EventHandler(this.employeeButton_Click);
+            this.employeeButton.Click += new System.EventHandler(this.EmployeeButton_Click);
             // 
             // loggedInUsername
             // 

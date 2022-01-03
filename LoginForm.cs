@@ -14,7 +14,7 @@ namespace A2ZRecreation
 {
     public partial class LoginForm : Form
     {
-        XmlSerializer serializer;
+        XmlSerializer  serializer;
         List<User> users;
         public LoginForm()
         {
@@ -23,7 +23,7 @@ namespace A2ZRecreation
             serializer = new XmlSerializer(typeof(List<User>));
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
             // get texts
             string username = usernameTextBox.Text.Trim();

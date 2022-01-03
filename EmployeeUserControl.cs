@@ -25,12 +25,12 @@ namespace A2ZRecreation
 
         private void EmployeeUserControl_Load(object sender, EventArgs e)
         {
-            updateTable();
+            UpdateTable();
 
                
         }
 
-        private void updateTable()
+        private void UpdateTable()
         {
             // Read all the users that are staff
             FileStream usersFile = new FileStream(System.IO.Directory.GetCurrentDirectory() + "\\Users.xml", FileMode.Open, FileAccess.Read);
@@ -55,12 +55,7 @@ namespace A2ZRecreation
         {
             AddEmployeeForm addEmployeeForm = new AddEmployeeForm();
             addEmployeeForm.ShowDialog();
-            updateTable();
-        }
-
-        private void deleteSelectedEmployeeButton_Click(object sender, EventArgs e)
-        {
-            
+            UpdateTable();
         }
     }
 }

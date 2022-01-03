@@ -81,7 +81,7 @@ namespace A2ZRecreation
         private void TicketingUserControl_Load(object sender, EventArgs e)
         {
             // Set current Day label
-            DayLabel.Text = DayLabel.Text + DateTime.Today.DayOfWeek.ToString();
+            DayLabel.Text += DateTime.Today.DayOfWeek.ToString();
         }
 
         private static double CalculatePrice(Ticket ticket)
@@ -95,27 +95,27 @@ namespace A2ZRecreation
                          : currentRate.OneDay;
             
             // price without discount
-            price = price * ticket.NoOfPeople;
+            price *= ticket.NoOfPeople;
 
             // check for child discount
             if(ticket.Type == TicketType.CHILD)
             {
-                price = price - price * currentRate.ChildDiscount / 100;
+                price -= price * currentRate.ChildDiscount / 100;
             }
 
             // check if eligible for group discount
             if(ticket.NoOfPeople >= 10)
             {
-                price = price - price * currentRate.TenDiscount / 100;
+                price -= price * currentRate.TenDiscount / 100;
             } else if (ticket.NoOfPeople >= 5)
             {
-                price = price - price * currentRate.FiveDiscount/ 100;
+                price -= price * currentRate.FiveDiscount/ 100;
             }
 
             // check if weekend charge is applicable
             if(DateTime.Today.DayOfWeek.Equals("Saturday") || DateTime.Today.DayOfWeek.Equals("Sunday"))
             {
-                price = price + price * currentRate.WeekendCharge / 100;
+                price += price * currentRate.WeekendCharge / 100;
             }
 
             return price;

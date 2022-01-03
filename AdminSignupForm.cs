@@ -23,7 +23,7 @@ namespace A2ZRecreation
             serializer = new XmlSerializer(typeof(List<User>));
         }
 
-        private void continueAsAdminButton_Click(object sender, EventArgs e)
+        private void ContinueAsAdminButton_Click(object sender, EventArgs e)
         {
             string adminUsername = usernameTextBox.Text.Trim();
             string adminPassword = passwordTextBox.Text;

@@ -30,7 +30,7 @@ namespace A2ZRecreation
 
         }
 
-        private void employeeButton_Click(object sender, EventArgs e)
+        private void EmployeeButton_Click(object sender, EventArgs e)
         {
             ratesUserControl1.Hide();
             reportUserControl1.Hide();
@@ -39,7 +39,7 @@ namespace A2ZRecreation
             employeeUserControl1.BringToFront();
         }
 
-        private void reportButton_Click(object sender, EventArgs e)
+        private void ReportButton_Click(object sender, EventArgs e)
         {
             ratesUserControl1.Hide();
             employeeUserControl1.Hide();
@@ -48,7 +48,7 @@ namespace A2ZRecreation
             reportUserControl1.BringToFront();
         }
 
-        private void ratesButton_Click(object sender, EventArgs e)
+        private void RatesButton_Click(object sender, EventArgs e)
         {
             employeeUserControl1.Hide();
             reportUserControl1.Hide();
