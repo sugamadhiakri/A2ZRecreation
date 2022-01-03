@@ -22,5 +22,16 @@ namespace A2ZRecreation
         {
             
         }
+
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            TicketHistoryTable.DataSource = Ticket.GetAvailableTickets();
+        }
+
+        private void RandomTicketsGenerator_Click(object sender, EventArgs e)
+        {
+            Ticket.Generate500RandomTickets();
+            TicketHistoryTable.DataSource = Ticket.GetAvailableTickets();
+        }
     }
 }
