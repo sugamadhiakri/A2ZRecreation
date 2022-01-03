@@ -66,9 +66,9 @@ namespace A2ZRecreation
             ticketingFile.Close();
         }
 
-        public static void Generate500RandomTickets()
+        public static void GenerateRandomTickets()
         {
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 100; i++)
             {
                 // Random Number generator
                 Random random = new Random();

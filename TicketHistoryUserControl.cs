@@ -30,7 +30,7 @@ namespace A2ZRecreation
 
         private void RandomTicketsGenerator_Click(object sender, EventArgs e)
         {
-            Ticket.Generate500RandomTickets();
+            Ticket.GenerateRandomTickets();
             TicketHistoryTable.DataSource = Ticket.GetAvailableTickets();
         }
     }

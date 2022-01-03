@@ -75,18 +75,16 @@ namespace A2ZRecreation
             int sat = 0;
 
             foreach (Ticket ticket in tickets)
-            {    
+            {
                 if (IsThisWeek(ticket.Date))
                 {
                     totalVisitors += ticket.NoOfPeople;
                     income += ticket.Price;
-
                     switch (ticket.Date.DayOfWeek.ToString())
                     {
                         case "Sunday":
                             sun += ticket.NoOfPeople;
                             break;
-
                         case "Monday":
                             mon += ticket.NoOfPeople;
                             break;
